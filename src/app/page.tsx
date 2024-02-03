@@ -1,4 +1,3 @@
-import Toggle from "@/components/Toggle";
 import Script from "next/script";
 
 export default function Home() {
