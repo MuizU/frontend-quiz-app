@@ -20,7 +20,7 @@ const ThemeSwitcher = (): JSX.Element | null => {
   }
 
   return (
-    <div className="flex justify-center gap-4">
+    <div className="flex gap-4">
       {theme === "dark" ? (
         <Image src={sunLightIcon} width={20} height={20} alt="sun-dark" />
       ) : (
