@@ -23,7 +23,7 @@ export default function RootLayout({
         className={`${inter.className} bg-slate-50 dark:bg-[#0d1117] ${switchThemeDuration}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="p-10 flex justify-end">
+          <div className="p-20 flex justify-end">
             <ThemeSwitcher />
           </div>
           <main>{children}</main>
