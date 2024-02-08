@@ -19,6 +19,11 @@ const config: Config = {
       emerald: "#26D782",
       rubyRed: "#EE5454",
     },
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-rubik)"],
+      },
+    },
   },
   plugins: [],
 };
