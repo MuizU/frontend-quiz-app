@@ -12,6 +12,9 @@ export default function Home() {
 
           <p className="mt-10 italic text-base">Pick a subject to get started</p>
         </div>
+        <div className="flex flex-col justify-normal items-center">
+
+        </div>
       </main>
     </>
   );
