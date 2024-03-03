@@ -5,7 +5,7 @@ export default async function Home() {
   const { quizzes } = JSON.parse(file);
   return (
     <>
-      <main className="flex min-h-screen items-start justify-start p-24">
+      <main className="flex min-h-screen items-start justify-start p-24 gap-80">
         <div className="flex flex-col justify-start text-7xl">
           <p className="font-thin">Welcome to the</p>
           <p className="font-semibold">Frontend Quiz!</p>
@@ -14,10 +14,10 @@ export default async function Home() {
             Pick a subject to get started
           </p>
         </div>
-        <div className="flex flex-col justify-normal items-center">
-          {quizzes.map(({ title }) => (
-            <div className="bg-white" key={title}>
-              {title}
+        <div className="flex flex-col justify-normal items-center ">
+          {quizzes.map(({ title }: { title: string }) => (
+            <div key={title} className="h-12 w-12">
+              <p className="text-black-400">{title}</p>
             </div>
           ))}
         </div>
