@@ -5,10 +5,3 @@
 html body {
   font-family: rubik;
 }
-
-.gradient-text {
-  background: -webkit-linear-gradient(rgb(239, 239, 239), rgb(159, 159, 159));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
