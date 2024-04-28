@@ -7,7 +7,7 @@ export default async function Home() {
   const { quizzes } = JSON.parse(file);
   return (
     <>
-      <main className="flex min-h-screen items-start justify-between px-24 py-12">
+      <main className="flex min-h-screen items-start justify-between px-24 py-12 text-[#313e51] dark:text-white">
         <div className="flex flex-col justify-start text-7xl">
           <p className="font-thin">Welcome to the</p>
           <p className="font-semibold">Frontend Quiz!</p>
