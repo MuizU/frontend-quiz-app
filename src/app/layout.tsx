@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { switchThemeDuration } from "./constants/switch-theme-duration";
 import { ThemeProvider } from "./theme-provider";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import localFont from "next/font/local";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Quiz App",
