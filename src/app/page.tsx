@@ -1,6 +1,5 @@
-import SelectionButton from "@/components/SelectionButton";
+import HeroSection from "@/components/HeroSection";
 import { promises as fs } from "fs";
-import Image from "next/image";
 
 export default async function Home() {
   const file = await fs.readFile(process.cwd() + "/data.json", "utf8");
@@ -16,14 +15,7 @@ export default async function Home() {
             Pick a subject to get started
           </p>
         </div>
-        <div className="flex flex-col gap-5 justify-normal items-center ">
-          {quizzes.map(({ title, icon }: { title: string; icon: string }) => (
-            <SelectionButton key={title}>
-              <Image src={icon} height={20} width={20} alt="title" />
-              <span>{title}</span>
-            </SelectionButton>
-          ))}
-        </div>
+        <HeroSection quizzes={quizzes} />
       </main>
     </>
   );
