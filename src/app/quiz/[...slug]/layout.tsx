@@ -50,9 +50,9 @@ export default async function QuizLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="p-20 flex justify-between">
-            <div className="flex justify-between gap-1">
-              <p>{title}</p>
+            <div className="flex justify-between gap-10 text-xl">
               <Image src={icon} height={20} width={20} alt={title} />
+              <p>{title}</p>
             </div>
             <ThemeSwitcher />
           </div>
