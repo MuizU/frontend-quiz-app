@@ -30,19 +30,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${rubik.variable} font-sans`}>
-      <body
+    <html lang="en" className={`${rubik.variable} font-sans`} >
+ <body
         className={` ${rubik.variable} font-sans bg-slate-50 bg-[#f4f6fa] dark:bg-[#313e51] dark:bg-[url(/images/pattern-background-desktop-dark.svg)] bg-[url(/images/pattern-background-desktop-light.svg)] ${switchThemeDuration}
-        light:bg-[url('/images/pattern-background-mobile-light.svg')] dark:bg-[url('/images/pattern-background-mobile-dark.svg')]
-        md:light:bg-[url('/images/pattern-background-tablet-light.svg')] md:dark:bg-[url('/images/pattern-background-tablet-dark.svg')]
-        lg:light:bg-[url('/images/pattern-background-desktop-light.svg')] lg:dark:bg-[url('/images/pattern-background-desktop-dark.svg')]
+         light:bg-[url('/images/pattern-background-mobile-light.svg')] dark:bg-[url('/images/pattern-background-mobile-dark.svg')]
+         md:light:bg-[url('/images/pattern-background-tablet-light.svg')] md:dark:bg-[url('/images/pattern-background-tablet-dark.svg')]
+         lg:light:bg-[url('/images/pattern-background-desktop-light.svg')] lg:dark:bg-[url('/images/pattern-background-desktop-dark.svg')]
+         bg-no-repeat bg-cover 
         `}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="p-20 flex justify-end">
             <ThemeSwitcher />
           </div>
-          <main>{children}</main>
+          {children}
         </ThemeProvider>
       </body>
     </html>
